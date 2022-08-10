@@ -656,8 +656,22 @@
     <div class="whatsapp">
         <div class="whatsapp-icon">
             <span>Chat me up</span>
-            <a href="#"><i class="fab fa-whatsapp"></i></a> 
+            <div class="fab fa-whatsapp" id="whatsapp-btn"></div>
         </div>
+    </div>
+
+    <div class="chat-form-container">
+        <div id="close-whatsapp-btn" class="fas fa-times"></div>
+        <form action="https://webaxen.com/get-details-submit" method="post">
+            <h3>Contact Us Via <i class="fab fa-whatsapp"></i></h3>
+            <p>Fill in the form to connect with us via whatsapp for live chat</p>
+            <input type="hidden" name="_token" value="C8KIxbfrkioJm4UJmZAl9dDbfjCXilhKspyhZUZi"><br>
+            <input type="text" placeholder="Enter your name" class="formBox" id="Wname"><br>
+            <input type="text" placeholder="Enter phone" class="formBox" id="Wphone"><br>
+            <input type="email" placeholder="name@example.com" class="formBox" id="Wemail"><br>
+            <textarea rows="3" placeholder="Message" class="formBox" id="Wmessage"></textarea>
+            <button class="chatBtn" type="button" onclick="whatsapp();">Send</button>
+        </form>
     </div>
 
 

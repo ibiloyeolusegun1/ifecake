@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 *{
-    font-family: 'quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -606,7 +607,7 @@ section h5{
     margin-bottom: 1.8rem;
     font-weight: bold;
 }
-.whatsapp .whatsapp-icon a i{
+.whatsapp .whatsapp-icon div{
     color: #0aaf0a;
     display: flex !important;
     align-items: center;
@@ -619,7 +620,7 @@ section h5{
     font-weight: bolder;
     animation: animate 2s linear infinite;
 }
-.whatsapp .whatsapp-icon a i:hover{
+.whatsapp .whatsapp-icon div:hover{
     transform: scale(1.1);
     color: #087008;
 }
@@ -638,6 +639,76 @@ section h5{
     }
 }
 
+/*=================== Whatsapp Popup ====================*/
+.chat-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(157, 240, 154, 0.795);
+    position: fixed;
+    top: 0;
+    right: -114%;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+.chat-form-container.active{
+    right: 0;
+}
+.chat-form-container form{
+    width: 50rem;
+    background: rgb(122, 204, 119);
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .6rem;
+    margin: 2rem;
+}
+.chat-form-container form h3{
+    font-size: 2.5rem;
+    color: var(--text-color-H);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.chat-form-container form p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.chat-form-container form .formBox{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    border: 1px solid #47cc47;
+    font-size: 1.5rem;
+    background: rgb(158, 238, 156);
+}
+.chat-form-container form .chatBtn{
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: rgb(21, 175, 16);
+    margin: 10px 0;
+    cursor: pointer;
+}
+.chat-form-container #close-whatsapp-btn{
+    position: absolute;
+    top: 1.6rem;
+    right: 2.1rem;
+    font-size: 2.2rem;
+    color: #eee;
+    background-color: #bd4c38;
+    border-radius: .6rem;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+}
 
 
 
